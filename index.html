@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Headline Prints</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+    :root {
+      --primary: #5a3822;
+      --secondary: #fffaf0;
+      --accent: #5a3822;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body, html {
+      font-family: 'Playfair Display', serif;
+      background-color: var(--secondary);
+      color: var(--primary);
+      scroll-behavior: smooth;
+    }
+    .topnav {
+      width: 100%;
+      background-color: var(--accent);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    .topnav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    .topnav a:hover {
+      color: #fff3d0;
+    }
+    section {
+      padding: 7rem 2rem 4rem;
+      min-height: 100vh;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    header img {
+      height: 220px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: '•';
+      color: var(--accent);
+      margin-right: 0.5rem;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+      border: 1px solid var(--primary);
+    }
+    form button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #a86241;
+    }
+    img.gallery {
+      width: 48%;
+      margin: 1%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    img.gallery:hover {
+      transform: scale(1.05);
+    }
+    .section-image {
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 12px;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      img.gallery { width: 100%; margin: 0.5rem 0; }
+      .topnav { flex-wrap: wrap; }
+      .topnav a { margin: 0.5rem; font-size: 0.95rem; }
+    }
+      .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .gallery-container img.gallery {
+      width: 48%;
+      margin-bottom: 2%;
+    }
+</style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#quote">Get a Quote</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <section id="home">
+    <header>
+      <img src="IMG_3811.PNG" alt="Headline Prints Logo" />
+      <h1>Step Into the Spotlight with Headline Prints 📸</h1>
+      <p>Where every snap becomes a headline-worthy moment.</p>
+    </header>
+    <p>Headline Prints delivers fun, interactive, and stylish photo booth experiences tailored to your event. Whether you're planning a wedding, birthday bash, or corporate event, we create unforgettable moments with instant prints and fully customizable templates that leave your guests raving.</p>
+    <img src="20250621_165750409.JPEG" alt="Home Setup" class="section-image" />
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We’re a team of creatives who believe your memories deserve more than just digital photos. With Headline Prints, each snap is transformed into a tangible keepsake — high-quality prints that bring joy long after your event ends. From setup to shareable snapshots, we’ve got you covered with a stylish edge.</p>
+    <video class="section-image" style="max-width: 40%; height: auto; display: block; margin: 2rem auto;" autoplay muted loop playsinline>
+      <source src="IMG_5065.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>High-resolution DSLR photos</li>
+      <li>Custom-designed photo templates (magazine, modern, and more)</li>
+      <li>Unlimited photo sessions with on-the-spot printing</li>
+      <li>Digital gallery ready within 24 hours</li>
+      <li>Instant social sharing options (text, email, QR)</li>
+      <li>Branded photo overlays for businesses or sponsors</li>
+      <li>Trendy props, elegant backdrops, and fun experiences</li>
+      <li>Friendly booth attendant for a seamless time</li>
+    </ul>
+    <video class="section-image" style="max-width: 40%; height: auto; display: block; margin: 2rem auto;" autoplay muted loop playsinline>
+      <source src="IMG_5066.MOV" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-container">
+    <img src="20250621_165750409.JPEG" alt="Event Photo 1" class="gallery" style="width: 48%;" />
+    <img src="20250621_162025967.JPEG" alt="Event Photo 2" class="gallery" style="width: 48%;" />
+    <img src="20250621_144234182.JPEG" alt="Event Photo 3" class="gallery" style="width: 48%;" />
+    <img src="20250621_140839388.JPEG" alt="Event Photo 4" class="gallery" style="width: 48%;" />
+  </div>
+</section>
+
+  <section id="quote">
+    <h2>Get a Quote</h2>
+    <form action="mailto:headlineprintsinfo@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="eventDate" placeholder="Event Date (e.g. July 20, 2025)" required />
+      <input type="text" name="guestCount" placeholder="Estimated Number of Guests" required />
+      <input type="text" name="eventLocation" placeholder="Event Location" required />
+      <textarea name="message" placeholder="Tell us a bit more about your event (theme, time, etc.)..." rows="5" required></textarea>
+      <input type="file" name="template">
+      <button type="submit">Send Quote Request</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:headlineprintsinfo@gmail.com">headlineprintsinfo@gmail.com</a></p>
+    <p>Phone: <strong>647-871-5909</strong></p>
+  </section>
+
+  <footer style="text-align: center; padding: 2rem; background-color: #5a3822; color: #fff;">
+    <p style="margin-bottom: 1rem;">Follow us @headlineprints</p>
+    <div style="font-size: 1.8rem;">
+      <a href="https://www.instagram.com/headlineprints" target="_blank" style="margin: 0 1rem; color: white; text-decoration: none;">
+        <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" />
+      </a>
+      <a href="https://www.tiktok.com/@headlineprints" target="_blank" style="margin: 0 1rem; color: white; text-decoration: none;">
+        <img src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" alt="TikTok" />
+      </a>
+      <a href="https://www.facebook.com/headlineprints" target="_blank" style="margin: 0 1rem; color: white; text-decoration: none;">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" />
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
